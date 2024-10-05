@@ -1,8 +1,8 @@
 [core]
 	editor = nvim
 [user]
-	email = nhathm.uet@outlook.com
-	name = Minh Nhat Hoang
+	email = nhat.hm@outlook.com
+	name = nhathm
 [push]
 	default = simple
 [alias]
