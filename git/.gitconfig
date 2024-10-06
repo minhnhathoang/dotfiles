@@ -3,6 +3,9 @@
 [user]
 	email = nhat.hm@outlook.com
 	name = nhathm
+	signingkey = 0FCF2B6081FECA01
+[commit]
+	gpgsign = true
 [push]
 	default = simple
 [alias]
