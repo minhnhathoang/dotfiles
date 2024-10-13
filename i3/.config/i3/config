@@ -283,3 +283,6 @@ exec i3-config-wizard
 exec --no-startup-id betterlockscreen -w dim
 
 bindsym $mod+shift+x exec betterlockscreen -l dim
+
+bindsym $mod+s exec alacritty -e nvim
+
