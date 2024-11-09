@@ -78,3 +78,18 @@ ZSH_CUSTOM=$DOTFILES
 plugins=(git history bgnotify)
 
 source $ZSH/oh-my-zsh.sh
+
+# Load completions
+fpath=(~/.zsh/zsh-completions $fpath)
+autoload -Uz compinit
+compinit
+# Enable command history suggestions
+zstyle ':completion:*' use-cache yes
+zstyle ':completion:*:*:*:*:*' menu select
+zstyle ':completion:*' list-prompt %S%M%n%u
+zstyle ':completion:*' complete-word  # Complete words from history
+zstyle ':completion:*:*:*:*:*' accept-exact 'yes'
+
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+export GOPRIVATE=github.com/KyberNetwork
