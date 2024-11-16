@@ -26,7 +26,7 @@ for_window [all] title_window_icon off
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+q kill
@@ -250,5 +250,5 @@ exec --no-startup-id betterlockscreen -w dim
 
 bindsym $mod+shift+x exec betterlockscreen -l dim
 
-bindsym $mod+s exec alacritty -e nvim
+bindsym $mod+s exec kitty -e nvim
 
