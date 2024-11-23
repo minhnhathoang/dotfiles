@@ -18,6 +18,7 @@ set $alt Mod1
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
+
 font pango:monospace 10
 
 for_window [all] title_window_icon off
