@@ -239,8 +239,21 @@ for_window [window_role="bubble"] floating enabled
 bar {
 	status_command i3status
 	tray_output primary
-	#tray_output HDMI1
-	#status_command conky
+
+	colors {
+          # Whole color settings
+          background #000000
+          statusline #ffffff
+          separator  #666666
+
+          # Type             border  background font
+          focused_workspace  #008fff #007fff #ffffff
+          active_workspace   #333333 #5f676a #ffffff
+          inactive_workspace #333333 #222222 #888888
+          urgent_workspace   #aa0000 #990000 #ffffff
+      }
+      # i3bar position
+      position bottom
 }
 
 exec i3-config-wizard
