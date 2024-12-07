@@ -239,15 +239,6 @@ for_window [window_role="bubble"] floating enabled
 bar {
 	status_command i3status
 	tray_output primary
-
-	colors {
-          # Whole color settings
-          background #000000
-          statusline #ffffff
-          separator  #666666
-      }
-      # i3bar position
-      position bottom
 }
 
 exec i3-config-wizard
